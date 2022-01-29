@@ -12,14 +12,12 @@ nav{
     color: white;
     height: 63px;
     font-size: 1.5rem;
-    font-family: cursive;
     font-weight: bold;
 }
 .container{
     width: 50vw;
     padding: 32px 0;
     margin: auto;
-    font-family: cursive;
     
     
 }
