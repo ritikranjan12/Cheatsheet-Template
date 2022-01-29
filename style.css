@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    height: 63px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: bold;
+}
+.container{
+    width: 50vw;
+    padding: 32px 0;
+    margin: auto;
+    font-family: cursive;
+    
+    
+}
+.logo{
+    padding: 20px;
+}
+.logo img {
+    height:35px;
+    width:35px;
+}
+
+li{
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 23px;
+}
+h3{
+    font-weight: bold;
+    font-size: 23px; 
+}
+.toolbar-item button{
+    cursor: pointer !important;
+    color: rgb(233, 204, 204) !important;
+    border: 1px solid rgb(214, 10, 10) !important;
+    border-radius: 15px !important;
+    padding: 5px 14px !important;
+}

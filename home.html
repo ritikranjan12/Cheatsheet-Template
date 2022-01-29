@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>HTML Cheatsheet By Ritik </title>
+</head>
+<body>
+    <nav>
+        <span class="logo"><img src="bk.jfif"  alt=""></span>
+        <div class="content center">
+            Furious Students
+        </div>
+    </nav>
+   
+    <div class="container">
+        <h1 class="jsx-1794874986 font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Java Cheatsheet</h1>
+        <p>Published <!-- -->Sat Jan 29 2022</p>
+        
+        <ol>
+            <li>Boilerplate</li>
+            <pre class="language-java"><code>class HelloWorld{ 
+    public static void main(String args[]){ 
+        System.out.println("Hello World"); 
+    } 
+}</code></pre>
+            <li>Showing Output</li> It will Print smething to the output console<pre class="language-java"><code>System.out.println([text])</code></pre>
+            <li>Taking Input</li> It will take string input from the user<pre class="language-html"><code>import java.util.Scanner; //import scanner class
+
+// create an object of Scanner class
+Scanner input = new Scanner(System.in);
+                
+// take input from the user
+String varName = input.nextLine();</code></pre>
+        <h3>Primitive Type Variables</h3><br>The eight primitives defined in Java are int, byte, short, long, float, double, boolean, and char those aren't considered objects and represent raw values.
+
+            <li>byte</li>byte is a primitive data type it only takes up 8 bits of memory<pre class="language-java"><code>age = 18;</code></pre>
+            <li>long</li>long is another primitive data type related to integers. long takes up 64 bits of memory.
+           <pre class="language-java"><code>viewsCount = 3_123_456L;</code></pre>
+           <li>float</li>We represent basic fractional numbers in Java using the float type. This is a single-precision decimal number. Which means if we get past six decimal points, this number becomes less precise and more of an estimate.
+           <pre class="language-java"><code>price = 100INR;</code></pre>
+           <li>char</li>Char is a 16-bit integer representing a Unicode-encoded character.
+           <pre class="language-java"><code>letter = 'A';</code></pre>
+           <li>boolean</li>The simplest primitive data type is boolean. It can contain only two values: true or false. It stores its value in a single bit.
+           <pre class="language-java"><code>isEligible = true;</code></pre>
+           <li>int</li>int holds a wide range of non-fractional number values.
+           <pre class="language-java"><code>var1 = 256;</code></pre>
+           <li>short</li>If we want to save memory and byte is too small, we can use short.
+           <pre class="language-java"><code>short var2 = 786;</code></pre>
+        <h3>Comments</h3><br>A comment is the code that is not executed by the compiler, and the programmer uses it to keep track of the code.
+           <li>Single line comment</li>
+           <pre class="language-java"><code>// It's a single line comment</code></pre>
+           <li>Multi-line comment</li>
+           <pre class="language-java"><code>/* It's a 
+multi-line
+comment
+*/</code></pre>
+           <li>Constants</li>Constants are like a variable, except that their value never changes during program execution.
+           <pre class="language-java"><code>final float INTEREST_RATE = 0.04;</code></pre>
+           <h3>Arithmetic Expressions</h3><br>These are the collection of literals and arithmetic operators.
+           <li>Addition</li>It can be used to add two numbers
+           <pre class="language-java"><code>int x = 10 + 3;</code></pre>
+           <li>Subtraction</li>It can be used to subtract two numbers
+           <pre class="language-java"><code>int x = 10 - 3;</code></pre>
+           <li>Multiplication</li>It can be used to multiply two numbers
+           <pre class="language-java"><code>int x = 10 + 3;</code></pre>
+           <li>Division</li>It can be used to divide two numbers
+           <pre class="language-java"><code>int x = 10 / 3;
+float x = (float)10 / (float)3;</code></pre>
+           <li>Modulo Remainder</li>It returns the remainder of the two numbers after division
+           <pre class="language-java"><code>int x = 10 % 3;</code></pre>
+           <h3>Augmented Operators</h3>
+           <li>Addition assignment</li>
+           <pre class="language-java"><code>var += 10;</code></pre>
+           <li>Subtraction assignment</li>
+           <pre class="language-java"><code>var -= 10;</code></pre>
+           <li>Multiplication assignment</li>
+           <pre class="language-java"><code>var *= 10;</code></pre>
+           <li>Division assignment</li>
+           <pre class="language-java"><code>var /= 10;</code></pre>
+           <li>Modulus assignment</li>
+           <pre class="language-java"><code>var %= 10;</code></pre>
+        <h3>Type Casting</h3><br>Type Casting is a process of converting one data type into another.
+        <li>Widening Type Casting</li>It means converting a lower data type into a higher.
+           <pre class="language-java"><code>int x = 45;
+double var_name = x;</code></pre>
+        <li>Narrowing Type Casting</li>It means converting a higher data type into a lower.
+        <pre class="language-java"><code>double x = 165.48
+int var_name = (int)x;</code></pre> 
+        <h3>Decision Control Statements</h3><br>
+        Conditional statements are used to perform operations based on some condition.
+        <li>if Statement</li>
+        <pre class="language-java"><code>if (condition) {
+// block of code to be executed if the condition is true
+}</code></pre> 
+<li>if-else Statement</li>
+        <pre class="language-java"><code>if (condition) {
+// If condition is True then this block will get executed
+} else {
+// If condition is False then this block will get executed
+}</code></pre> 
+
+<li>if else-if Statement</li>
+        <pre class="language-java"><code>if (condition1) {
+    //Codes
+}
+else if(condition2) {
+    // Codes
+    }
+    else if (condition3) {
+        // Codes
+        }
+        else {
+            // Codes
+        }</code></pre> 
+        <li>Ternary Operator</li>It is shorthand of an if-else statement.
+        <pre class="language-java"><code>variable = (condition) expressionTrue : expressionFalse;</code></pre> 
+        <li>Switch Statements</li>It allows a variable to be tested for equality against a list of values (cases).
+        <pre class="language-java"><code>switch(expression) {
+case a:
+    // code block
+    break;
+case b:
+    // code block
+    break;
+default:
+    // code block
+}</code></pre> 
+        <h3>Iterative Statements</h3><br>Iterative statements facilitate programmers to execute any block of code lines repeatedly and can be controlled as per conditions added by the coder.
+        <li>while Loop</li>It iterates the block of code as long as a specified condition is True.
+        <pre class="language-java"><code>while (condition) {
+    // code block
+}</code></pre>
+<li>for Loop</li>for loop is used to run a block of code several times
+        <pre class="language-java"><code>for (initialization;termination; increment) {
+    statement(s);
+}</code></pre>
+<li>for-each Loop</li><pre class="language-java"><code>for(dataType item : array) {
+    ...
+}</code></pre>
+<li>do-while Loop
+</li>It is an exit controlled loop. It is very similar to the while loop with one difference, i.e., the body of the do-while loop is executed at least once even if the condition is False<pre class="language-java"><code>do {
+   // body of loop
+} while(textExpression)</code></pre>
+<li>Break Statement
+</li>break keyword inside the loop is used to terminate the loop<pre class="language-java"><code>break;</code></pre>
+
+<li>Continue statement
+</li>continue keyword skips the rest of the current iteration of the loop and returns to the starting point of the loop<pre class="language-java"><code>continue;</code></pre>
+<h3>Arrays</h3><br>Arrays are used to store multiple values in a single variable.
+<li>Declaring an array
+</li>Defining an array<pre class="language-java"><code>String[] var_name = {''Harry", "Rohan", "Aakash"};
+</code></pre>
+<li>Accessing an array
+</li>Accessing the elements of an array<pre class="language-java"><code>String[] var_name = {''Harry", "Rohan", "Aakash"};
+System.out.println(var_name[index]);
+</code></pre>
+<li>Changing an element
+</li>Changing any element in an array<pre class="language-java"><code>String[] var_name = {''Harry", "Rohan", "Aakash"};
+var_name[2] = "Shubham";
+</code></pre>
+<li>Array length
+</li>It gives the length of the array<pre class="language-java"><code>System.out.println(var_name.length);
+</code></pre>
+<li>Loop through an array
+</li><pre class="language-java"><code>String[] var_name = {''Harry", "Rohan", "Aakash"};
+for (int i = 0; i < var_name.length; i++) {
+    System.out.println(var_name[i]);
+}
+</code></pre>
+<li>Multi-dimensional Arrays
+</li>Arrays can be 1-D, 2-D or multi-dimensional.<pre class="language-java"><code>// Creating a 2x3 array (two rows, three columns) 
+int[2][3] matrix = new int[2][3]; 
+matrix[0][0] = 10; 
+// Shortcut 
+int[2][3] matrix = { 
+{ 1, 2, 3 }, 
+{ 4, 5, 6 } 
+};
+</code></pre>
+<h3>Methods</h3><br>Methods are used to divide an extensive program into smaller pieces. It can be called multiple times to provide reusability to the program.
+<li>Declaration
+</li>Declaration of a method<pre class="language-java"><code>returnType methodName(parameters) {
+    //statements
+}
+</code></pre>
+
+<li>Calling a method
+</li>Calling a method<pre class="language-java"><code>methodName(arguments);
+</code></pre>
+
+<li>Method Overloading
+</li>Method overloading means having multiple methods with the same name, but different parameters.<pre class="language-java"><code>void sum (int x, int y)
+{
+    System.out.println("Sum is: "+(a+b)) ;
+}
+void sum (float x, float y)
+{
+    System.out.println("Sum is: "+(a+b));
+}
+Public static void main (String[] args)
+{
+    Calculate calc = new Calculate();
+    calc.sum (5,4); //sum(int x, int y) is method is called.
+    calc.sum (1.2f, 5.6f); //sum(float x, float y) is called.
+}
+}
+</code></pre>
+<li>Recursion
+</li>Recursion is when a function calls a copy of itself to work on a minor problem. And the function that calls itself is known as the Recursive function.<pre class="language-java"><code>void recurse()
+{
+    ... .. ...
+    recurse();
+    ... .. ...
+}
+</code></pre>
+<h3>Strings</h3><br>It is a collection of characters surrounded by double quotes.
+<li>Creating String Variable
+</li><pre class="language-java"><code>String var_name = "Hello World";
+</code></pre>
+<li>String Length
+</li>Returns the length of the string<pre class="language-java"><code>String var_name = "Harry";
+System.out.println("The length of the string is: " + var_name.length());
+</code></pre>
+<li>String Methods toUpperCase()
+</li>Convert the string into uppercase<pre class="language-java"><code>String var_name = "Harry";
+System.out.println(var_name.toUpperCase());
+</code></pre>
+<li>String Methods toLowerCase()
+</li>Convert the string into lowercase<pre class="language-java"><code>String var_name = "Harry";
+System.out.println(var_name.toLowerCase());
+</code></pre>
+<li>indexOf()
+</li>Returns the index of specified character from the string<pre class="language-java"><code>String var_name = "Harry";
+System.out.println(var_name.indexOf("a"));</code></pre>
+<li>concat()
+</li>Used to concatenate two strings<pre class="language-java"><code>String var1 = "Harry";
+String var2 = "Bhai";
+System.out.println(var1.concat(var2));</code></pre>
+<h3>Math Class</h3><br>Math class allows you to perform mathematical operations.
+<li>Methods max() method
+</li>It is used to find the greater number among the two<pre class="language-java"><code>Math.max(25, 45);</code></pre>
+<li>min() method
+</li>It is used to find the smaller number among the two<pre class="language-java"><code>Math.min(8, 7);</code></pre>
+<li>sqrt() method
+</li>It returns the square root of the supplied value<pre class="language-java"><code>Math.sqrt(144);</code></pre>
+<li>random() method
+</li>It is used to generate random numbers<pre class="language-java"><code>int random_num = (int)(Math.random() * 101); //Random num b/w 0 and 100
+</code></pre>
+<h3>Object-Oriented Programming</h3><br>It is a programming approach that primarily focuses on using objects and classes. The objects can be any real-world entities.
+<li>object
+</li>An object is an instance of a Class.<pre class="language-java"><code>className object = new className();
+</code></pre>
+<li>class
+</li>A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.<pre class="language-java"><code>class ClassName {
+    // Fields
+    // Methods
+    // Constructors
+    // Blocks
+}
+</code></pre>
+<li>Encapsulation
+</li>Encapsulation is a mechanism of wrapping the data and code acting on the data together as a single unit. In encapsulation, the variables of a class will be hidden from other classes and can be accessed only through the methods of their current class.<pre class="language-java"><code>public class Person { 
+    private String name; // using private access modifier 
+    
+    // Getter 
+    public String getName() { 
+    return name; 
+    } 
+    
+    // Setter 
+    public void setName(String newName) { 
+    this.name = newName; 
+    } 
+}
+</code></pre>
+<li>Inheritance
+</li>Inheritance can be defined as the process where one class acquires the properties of another. With the use of inheritance the information is made manageable in a hierarchical order.<pre class="language-java"><code>class Subclass-name extends Superclass-name 
+{ 
+    //methods and fields 
+}
+</code></pre>
+<li>Polymorphism
+</li>Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object..<pre class="language-java"><code>// A class with multiple methods with the same name 
+    public class Adder { 
+    // method 1 
+    public void add(int a, int b) { 
+    System.out.println(a + b); 
+    } 
+    
+    // method 2 
+    public void add(int a, int b, int c) { 
+    System.out.println(a + b + c); 
+    } 
+    
+    // method 3 
+    public void add(String a, String b) { 
+    System.out.println(a + " + " + b); 
+    } 
+} 
+    
+    // My main class 
+    class MyMainClass { 
+    public static void main(String[] args) { 
+    Adder adder = new Adder(); // create a Adder object 
+    adder.add(5, 4); // invoke method 1 
+    adder.add(5, 4, 3); // invoke method 2 
+    adder.add("5", "4"); // invoke method 3 
+    } 
+}
+</code></pre>
+<h3>File Operations</h3><br>File handling refers to reading or writing data from files. Java provides some functions that allow us to manipulate data in the files.
+<li>canRead method
+</li>Checks whether the file is readable or not.<pre class="language-java"><code>file.canRead();</code></pre>
+<li>createNewFile method
+</li>It creates an empty file.<pre class="language-java"><code>file.createNewFile();</code></pre>
+<li>canWrite method
+</li>Checks whether the file is writable or not<pre class="language-java"><code>file.canWrite();</code></pre><li>exists method
+</li>Checks whether the file exists<pre class="language-java"><code>file.exists();</code></pre>
+<li>delete method
+</li>It deletes a file<pre class="language-java"><code>file.delete();</code></pre>
+<li>getName method
+</li>It returns the name of the file<pre class="language-java"><code>file.getName();</code></pre>
+<li>getAbsolutePath method
+</li>It returns the absolute pathname of the file<pre class="language-java"><code>file.getAbsolutePath();</code></pre>
+<li>length Method
+</li>It returns the size of the file in bytes<pre class="language-java"><code>file.length();</code></pre>
+<li>list Method
+</li>It returns an array of the files in the directory<pre class="language-java"><code>file.list();</code></pre>
+<li>mkdir method
+</li>It is used to create a new directory<pre class="language-java"><code>file.mkdir();</code></pre>
+
+<li>close method
+</li>It is used to close the file<pre class="language-java"><code>file.close();</code></pre>
+
+<li>To write something in the file
+</li><pre class="language-java"><code>import java.io.FileWriter; // Import the FileWriter class
+import java.io.IOException; // Import the IOException class to handle errors
+    
+public class WriteToFile {
+    public static void main(String[] args) {
+    try {
+        FileWriter myWriter = new FileWriter("filename.txt");
+        myWriter.write("Laal Phool Neela Phool, Harry Bhaiya Beautiful");
+        myWriter.close();
+        System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+        System.out.println("An error occurred.");
+        e.printStackTrace();
+        }
+    }
+}</code></pre>
+<h3>Exception Handling</h3><br>An exception is an unusual condition that results in an interruption in the flow of the program.
+
+<li>try-catch block
+</li>try statement allow you to define a block of code to be tested for errors. catch block is used to handle the exception.<pre class="language-java"><code>try {
+    // Statements
+    }
+catch(Exception e) {
+    // Statements
+}</code></pre>
+<li>finally block
+</li>finally code is executed whether an exception is handled or not.<pre class="language-java"><code>try {
+    // Statements
+    }
+catch(Exception e) {
+    // Statements
+}
+finally {
+    // finally block always executes
+}</code></pre>
+
+
+
+
+
+    </div>
+</body>
+</html>
